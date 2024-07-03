@@ -1,0 +1,40 @@
+console.log("hello mere baby");
+var a = 10;
+let b = 20;
+const c = 5;
+
+console.log(a*b/c);
+-------------------------------------------------------------FOR LOOP-----------------------------------------
+for(i=0;i<=10;i++)
+{
+    console.log(i);
+}
+--------------------------------------------------------IF FORMULA----------------------------------------
+if(a===10){
+    console.log(true,"sahi hai bhai");
+}
+-------------------------------------------Array functions -----------------------------------------
+let arr = [8,3,6,8,7,8,0,6,3,6];
+console.log(arr[8]);  
+-------------------------------------how to make import files-----------------------------------------
+let App = require('./App');
+console.log(App.hai);
+--------------------------------------------------Array with filter-------------------------------------------
+let age = [28,13,16,18,47,18,20,56,33,16];
+ let result = age.filter((item)=>{
+   return item <47
+})
+console.log(result);
+-----------------------------------------------how to make txt files---------------------------------------
+let fs = require("fs");
+fs.writefilesync("hello.txt","hello brother");
+
+--------------------------------------------------how to make server and how to use funtions with the output------------------------------------------
+
+const http = require("http");
+const { default: test } = require("node:test");
+http.createServer((req,resp)=>{
+    resp.write("<h1>hello this is mukund</h1>");
+    resp.end();
+
+}).listen(4500);
